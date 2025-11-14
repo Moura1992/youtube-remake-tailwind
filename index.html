@@ -1,123 +1,365 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Remake Youtube</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <header class="fixed top-0 left-0 bg-white z-50 px-4 py-2 flex items-center justify-between border-b border-gray-200 w-full">
-        <div class="flex items-center gap-4">
+  </head>
+  <body>
+    <header
+      class="fixed top-0 left-0 bg-white z-50 px-4 py-2 flex items-center justify-between border-b border-gray-200 w-full"
+    >
+      <div class="flex items-center gap-4">
+        <button class="p-2 hover:bg-gray-100 cursor-pointer">
+          <i class="ri-menu-fill text-xl"></i>
+        </button>
 
-            <button class="p-2 hover:bg-gray-100 cursor-pointer">
-                <i class="ri-menu-fill text-xl"></i>
-            </button>
-
-            <div class="flex items-center gap-1 cursor-pointer">
-                <i class="ri-youtube-fill text-3xl text-red-600"></i>
-                <span class="text-xl font-semibold">Youtube</span>
-                <span class="text-[10px] text-gray-600">BR</span>
-            </div>
-
+        <div class="flex items-center gap-1 cursor-pointer">
+          <i class="ri-youtube-fill text-3xl text-red-600"></i>
+          <span class="text-xl font-semibold">Youtube</span>
+          <span class="text-[10px] text-gray-600">BR</span>
         </div>
+      </div>
 
-        <form class="flex-1 max-w-2xl mx-4 flex">
-            <input type="text" placeholder="Pesquisar"
-            class="flex-1 px-4 py-2 border-gray-300 rounded-l-full rounded-r-0 hover:bg-gray-200 cursor-pointer">
-            <button class="px-6 py-4 bg-gray-50 border-l-0 border-gray-300 rounded-r-full hover:bg-gray-200 cursor-pointer">
-                <i class="ri-search-line"></i>
-            </button>
-            <button class=" ml-2 px-4 py-2 bg-white rounded-full hover:bg-gray-200 cursor-pointer">
-                <i class="ri-mic-line"></i>
-            </button>
-        </form>
+      <form class="flex-1 max-w-2xl mx-4 flex">
+        <input
+          type="text"
+          placeholder="Pesquisar"
+          class="flex-1 px-4 py-2 border-gray-300 rounded-l-full rounded-r-0 hover:bg-gray-200 cursor-pointer"
+        />
+        <button
+          class="px-6 py-4 bg-gray-50 border-l-0 border-gray-300 rounded-r-full hover:bg-gray-200 cursor-pointer"
+        >
+          <i class="ri-search-line"></i>
+        </button>
+        <button
+          class="ml-2 px-4 py-2 bg-white rounded-full hover:bg-gray-200 cursor-pointer"
+        >
+          <i class="ri-mic-line"></i>
+        </button>
+      </form>
 
-        <div class="flex items-center gap-2">
-            <button class="p-2 hover:bg-gray-100 rounded-full">
-              <i class="ri-video-add-line"></i>
+      <div class="flex items-center gap-2">
+        <button class="p-2 hover:bg-gray-100 rounded-full">
+          <i class="ri-video-add-line"></i>
+        </button>
 
-            </button>
+        <button class="p-2 hover:bg-gray-100 rounded-full">
+          <i class="ri-notification-3-line"></i>
+        </button>
 
-             <button class="p-2 hover:bg-gray-100 rounded-full">
-                <i class="ri-notification-3-line"></i>
-             </button>
-
-              <button class="ml-2 w-8 h-8 bg-purple-600 rounded-full text-white font-semibold">
-                M
-              </button>
-        </div>
-
+        <button
+          class="ml-2 w-8 h-8 bg-purple-600 rounded-full text-white font-semibold"
+        >
+          M
+        </button>
+      </div>
     </header>
 
-
     <div class="flex pt-14">
-        <aside class="fixed left-0 top-14 w-60 bg-white overflow-y-auto py-6">
-            <nav class="space-y-1">
-                <a href="#" class="flex items-center gap-6 px-6 py-2 bg-gray-100">
-                    <i class="ri-home-3-fill"></i>
-                    <span class="text-sm font-medium">Inicio</span>
-                </a>
-            
+      <aside class="fixed left-0 top-14 w-60 bg-white overflow-y-auto py-6">
+        <nav class="space-y-1">
+          <a href="#" class="flex items-center gap-6 px-6 py-2 bg-gray-100">
+            <i class="ri-home-3-fill"></i>
+            <span class="text-sm font-medium">Inicio</span>
+          </a>
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-100">
-                    <i class="ri-compass-3-line text-xl"></i>
-                    <span class="text-sm font-medium">Explorar</span>
-                </a>
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-100"
+          >
+            <i class="ri-compass-3-line text-xl"></i>
+            <span class="text-sm font-medium">Explorar</span>
+          </a>
 
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"
+          >
+            <i class="ri-play-list-2-line text-xl"></i>
+            <span class="text-sm font-medium">Incrições</span>
+          </a>
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200">
-                    <i class="ri-play-list-2-line text-xl"></i>
-                    <span class="text-sm font-medium">Incrições</span>
-                </a>
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"
+          >
+            <i class="ri-history-line text-xl"></i>
+            <span class="text-sm font-medium">Histórico</span>
+          </a>
 
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"
+          >
+            <i class="ri-time-line text-xl"></i>
+            <span class="text-sm font-medium">Assistir mais tarde</span>
+          </a>
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200">
-                    <i class="ri-history-line text-xl"></i>
-                    <span class="text-sm font-medium">Histórico</span>
-                </a>
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"
+          >
+            <i class="ri-thumb-up-line text-xl"></i>
+            <span class="text-sm font-medium">Vídeos Marcados</span>
+          </a>
 
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"
+          ></a>
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200">
-                    <i class="ri-time-line text-xl"></i>
-                    <span class="text-sm font-medium">Assistir mais tarde</span>
-                </a>
+          <h3 class="px-6 py-2 text-sm font-medium text-gray-900">Incrições</h3>
 
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"
+          >
+            <div class="w-6 h-6 bg-red-500 rounded-full"></div>
+            <span class="text-sm font-medium">Tech Channel</span>
+          </a>
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200">
-                    <i class="ri-thumb-up-line text-xl"></i>
-                    <span class="text-sm font-medium">Vídeos Marcados</span>
-                </a>
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"
+          >
+            <div class="w-6 h-6 bg-green-500 rounded-full"></div>
+            <span class="text-sm font-medium">Agro Channel</span>
+          </a>
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"></a>
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200"
+          >
+            <div class="w-6 h-6 bg-blue-500 rounded-full"></div>
+            <span class="text-sm font-medium">Games Channel</span>
+          </a>
+        </nav>
+      </aside>
+      <!--
 
-                <h3 class="px-6 py-2 text-sm font-medium text-gray-900">Incrições</h3>
+        L - LEFT -ESQUERDA
+        R - RIGTH - DIREITA
+        T - TOP - CIMA
+        B -BOTTOM -BAIXO
+        X - LADOS
+        Y - CIMA EM BAIXO
+        W - WIDTH -LARGURA
+        H - HEIGTH -ALTURA
+        M - MARGIN - ESPAÇAMENTO EXTERNO
+        P - PADDING - ESPAÇAMENTO INTERNO
+        BG - BACKGROUND
+        SM -SMALL PEQUENO
+        LG-LARGE -GRANDE
+        M -MEDIUM
+        XL - EXTRALARGE -MUITO GRANDE
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200">
-                    <div class=" w-6 h-6 bg-red-500 rounded-full"></div>
-                    <span class="text-sm font-medium">Tech Channel</span>
-                </a>
+        -->
 
+      <main class="flex-1 ml-60 p-6">
+        <div class="flex gap-3 mb-6 overflow-x-auto pb-2 pt-4">
+          <button
+            class="px-3 py-0 bg-gray-900 text-white rounded-lg text-sm whitespace-nowrap cursor-pointer"
+          >
+            Tudo
+          </button>
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200">
-                    <div class=" w-6 h-6 bg-green-500 rounded-full"></div>
-                    <span class="text-sm font-medium">Agro Channel</span>
-                </a>
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Música
+          </button>
 
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Filmes
+          </button>
 
-                <a href="#" class="flex items-center gap-6 px-6 py-2 hover:bg-gray-200">
-                    <div class=" w-6 h-6 bg-blue-500 rounded-full"></div>
-                    <span class="text-sm font-medium">Games Channel</span>
-                </a>
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Jogos
+          </button>
 
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Programaçao
+          </button>
 
-            </nav>
-        </aside>
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Podcast
+          </button>
 
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Noticias
+          </button>
+
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap hover:bg-gray-400"
+          >
+            Culinarias
+          </button>
+
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Lazer
+          </button>
+
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Esportes
+          </button>
+
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Assistidos
+          </button>
+
+          <button
+            class="px-3 py-0 bg-gray-100 text-black rounded-lg text-sm whitespace-nowrap cursor-pointer hover:bg-gray-400"
+          >
+            Cursos
+          </button>
+        </div>
+
+        <div class="grid grid-cols-4 gap-4" id="videos"></div>
+      </main>
     </div>
+  </body>
 
+  <script>
+    const videos = [
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
 
-</body>
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+
+      {
+        title: "Curso de HTML",
+        channel: "Maria Moura",
+        views: "130mil",
+        time: "há 2 dias",
+        duration: "10:34m",
+      },
+    ];
+
+    const container = document.getElementById("videos");
+
+    videos.forEach((video, i) => {
+      const videoCard = document.createElement("article");
+      videoCard.className = "cursor-pointer";
+
+      videoCard.innerHTML = `
+        <div class="relative bg-gray-200 rounded-xl overflow-hidden">
+           <img src = "https://picsum.photos/400/250?random=${i} "> 
+            <span class="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1 rounded">
+                ${video.duration}
+            </span>
+        </div>
+        <h2 class="mt-2 font-bold">${video.title}</h2>
+        <p class="text-sm text-gray-600">${video.channel} . ${video.views} . ${video.time}</p>
+    `;
+
+      container.appendChild(videoCard);
+    });
+    
+  </script>
 </html>
